@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кіномани</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    <header class="bg-blue-900 text-white py-3">
+      <nav class="container mx-auto flex justify-between items-center px-4">
+        <a class="text-xl font-bold" href="#">Кіномани</a>
+        <div class="flex-grow flex justify-center">
+          <ul
+            class="flex flex-col md:flex-row md:space-x-6 bg-blue-900 md:bg-transparent p-4 md:p-0"
+          >
+            <li>
+              <a href="#" class="hover:underline block py-2 md:py-0">Головна</a>
+            </li>
+            <li class="relative group">
+              <a href="#" class="hover:underline block py-2 md:py-0">Фільми</a>
+              <ul
+                class="hidden group-hover:block md:absolute md:left-1/2 md:transform md:-translate-x-1/2 bg-blue-200 text-black w-40 py-2 md:mt-2"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-300"
+                    >Кращі фільми</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-300"
+                    >Жанри</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-blue-300"
+                    >Новинки</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="hover:underline block py-2 md:py-0"
+                >Режисери</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline block py-2 md:py-0">Галерея</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline block py-2 md:py-0"
+                >Контакти</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="flex-grow container mx-auto p-6 grid grid-cols-1 md:grid-cols-12 gap-4 md:auto-rows-fr"
+    >
+      <aside
+        class="bg-white p-4 shadow rounded md:order-1 order-3 md:col-span-3"
+      >
+        <div class="grid grid-cols-2 md:grid-cols-2 gap-2">
+          <img
+            src="images/avatar_vert.jpg"
+            class="w-full rounded"
+            alt="Аватар"
+          />
+          <img
+            src="images/forrest_gump_vert.jpg"
+            class="w-full rounded"
+            alt="Форест Гамп"
+          />
+          <img
+            src="images/interstellar_vert.jpg"
+            class="w-full rounded"
+            alt="Інтерстеллар"
+          />
+          <img
+            src="images/lord_of_the_rings_vert.jpg"
+            class="w-full rounded"
+            alt="Властелин Колец"
+          />
+        </div>
+      </aside>
+
+      <section
+        class="bg-white p-4 shadow rounded md:order-2 order-1 md:col-span-6"
+      >
+        <div class="space-y-4 mb-4">
+          <div class="border rounded bg-blue-200 p-3">
+            <h3 class="text-lg font-semibold">Фантастика</h3>
+            <p>Опис жанру...</p>
+          </div>
+          <div class="border rounded bg-blue-200 p-3">
+            <h3 class="text-lg font-semibold">Драма</h3>
+            <p>Опис жанру...</p>
+          </div>
+          <div class="border rounded bg-blue-200 p-3">
+            <h3 class="text-lg font-semibold">Комедія</h3>
+            <p>Опис жанру...</p>
+          </div>
+        </div>
+        <form class="space-y-4">
+          <h2 class="text-lg font-semibold">Залишити відгук</h2>
+          <input
+            type="text"
+            placeholder="Ім'я"
+            class="w-full p-2 border rounded"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full p-2 border rounded"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Назва фільму"
+            class="w-full p-2 border rounded"
+            required
+          />
+          <select class="w-full p-2 border rounded">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+          <button
+            type="submit"
+            class="bg-blue-200 p-2 rounded w-full hover:bg-blue-900"
+          >
+            Надіслати
+          </button>
+        </form>
+      </section>
+
+      <aside
+        class="bg-white p-4 shadow rounded md:order-3 order-2 md:col-span-3"
+      >
+        <h2 class="text-lg font-semibold">Топ-5 фільмів</h2>
+        <ul class="list-none space-y-2">
+          <li>1. Фільм 1</li>
+          <li>2. Фільм 2</li>
+          <li>3. Фільм 3</li>
+          <li>4. Фільм 4</li>
+          <li>5. Фільм 5</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="bg-blue-900 text-white text-center py-3 mt-auto">
+      <p>&copy; 2025 Кіномани. Усі права захищено.</p>
+    </footer>
+  </body>
+</html>
